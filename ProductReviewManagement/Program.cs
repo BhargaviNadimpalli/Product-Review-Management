@@ -38,7 +38,8 @@ namespace ProductReviewManagement
             //management.TopRecord(products);
             //management.SelectRecords(products);
             //management.RetrieveCountRecords(products);
-            management.RetrieveProductIDAndReview(products);
+            //management.RetrieveProductIDAndReview(products);
+            management.SkipTopFive(products);
         }
     }
 }
