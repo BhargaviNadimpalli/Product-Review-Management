@@ -29,12 +29,13 @@ namespace ProductReviewManagement
                 new ProductReview(){ProductId=1, UserId=5, Rating = 5, Review = "Good", IsLike = true},
                 new ProductReview(){ProductId=7, UserId=7, Rating = 4, Review = "Bad", IsLike = true},
             };
-            foreach (var list in products)
-            {
-                Console.WriteLine("ProductId : " + list.ProductId + " " + "UserId : " + " " + list.UserId
-                    + " " + "Rating : " + list.Rating + " " + "Review : " + list.Review + " " + "IsLike : " + list.IsLike);
-            }
-
+            //foreach (var list in products)
+            //{
+            //    Console.WriteLine("ProductId : " + list.ProductId + " " + "UserId : " + " " + list.UserId
+            //        + " " + "Rating : " + list.Rating + " " + "Review : " + list.Review + " " + "IsLike : " + list.IsLike);
+            //}
+            Management management = new Management();
+            management.TopRecord(products);
 
         }
     }
