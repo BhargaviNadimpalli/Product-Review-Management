@@ -35,8 +35,8 @@ namespace ProductReviewManagement
             //        + " " + "Rating : " + list.Rating + " " + "Review : " + list.Review + " " + "IsLike : " + list.IsLike);
             //}
             Management management = new Management();
-            management.TopRecord(products);
-
+            //management.TopRecord(products);
+            management.SelectRecords(products);
         }
     }
 }
