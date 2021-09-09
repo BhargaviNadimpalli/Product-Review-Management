@@ -29,17 +29,25 @@ namespace ProductReviewManagement
                 new ProductReview(){ProductId=1, UserId=5, Rating = 5, Review = "Good", IsLike = true},
                 new ProductReview(){ProductId=7, UserId=7, Rating = 4, Review = "Bad", IsLike = true},
             };
+            //UC1
             //foreach (var list in products)
             //{
             //    Console.WriteLine("ProductId : " + list.ProductId + " " + "UserId : " + " " + list.UserId
             //        + " " + "Rating : " + list.Rating + " " + "Review : " + list.Review + " " + "IsLike : " + list.IsLike);
             //}
             Management management = new Management();
+            //UC2
             //management.TopRecord(products);
+            //UC3
             //management.SelectRecords(products);
+            //UC4
             //management.RetrieveCountRecords(products);
+            //UC5
             //management.RetrieveProductIDAndReview(products);
-            management.SkipTopFive(products);
+            //UC6
+            //management.SkipTopFive(products);
+            //UC7
+            management.RetrieveProductIDAndReviewWithSelect(products);
         }
     }
 }
